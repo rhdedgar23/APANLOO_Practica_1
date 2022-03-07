@@ -1,0 +1,16 @@
+package Parte_2_Version_2;
+
+public class Racional {
+	
+	int num, den;//dos atributos en vez de 4
+	
+	public static Racional sumaRacionales(Racional rac1, Racional rac2){//dos parametros en vez de 4 
+		
+		Racional rac3= new Racional();
+		
+		rac3.den= (rac1.den)*(rac2.den);
+		rac3.num= (rac1.num*rac2.den)+(rac1.den*rac2.num);
+		
+		return rac3;
+	}
+}
